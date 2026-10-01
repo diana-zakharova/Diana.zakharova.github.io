@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Zakharova | Cancer Biology Researcher</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #24344d;
+            background: #faf9f7;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 7%;
+            background: #faf9f7;
+            border-bottom: 1px solid #e5e2df;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #24344d;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #6f7fa5;
+        }
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+            background:
+                linear-gradient(120deg, #eef0f7 0%, #f8f5f2 55%, #e7e8f2 100%);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(48px, 7vw, 82px);
+            line-height: 1;
+            margin-bottom: 18px;
+            color: #23344f;
+        }
+
+        .hero h2 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            color: #536174;
+            margin-bottom: 32px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #344968;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: #53698e;
+        }
+
+        .research-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 55px 7%;
+            background: white;
+        }
+
+        .card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-family: Georgia, serif;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #687386;
+        }
+
+        section {
+            padding: 90px 7%;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #23344f;
+        }
+
+        .about {
+            max-width: 850px;
+        }
+
+        .about p {
+            color: #536174;
+            font-size: 17px;
+        }
+
+        .research {
+            background: #f1f1f5;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .research-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .research-box h3 {
+            font-family: Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        .research-box p {
+            color: #687386;
+            font-size: 15px;
+        }
+
+        .contact {
+            background: #e9eaf2;
+        }
+
+        footer {
+            padding: 25px 7%;
+            text-align: center;
+            font-size: 13px;
+            color: #7a8190;
+            background: #faf9f7;
+        }
+
+        @media (max-width: 800px) {
+            nav ul {
+                gap: 12px;
+            }
+
+            .research-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .research-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Diana Zakharova</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <h1>Diana<br>Zakharova</h1>
+
+            <h2>Cancer Biology Researcher</h2>
+
+            <p>
+                I am interested in understanding the molecular mechanisms
+                underlying cancer cell plasticity and identifying new
+                therapeutic vulnerabilities to improve treatment outcomes.
+            </p>
+
+            <a class="button" href="#research">
+                Explore My Research →
+            </a>
+
+        </div>
+    </section>
+
+    <div class="research-cards">
+
+        <div class="card">
+            <div class="card-icon">🧬</div>
+            <h3>Cancer Biology</h3>
+            <p>Understanding mechanisms that drive cancer progression.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🔬</div>
+            <h3>Prostate Cancer</h3>
+            <p>Studying tumor biology and therapeutic vulnerabilities.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📊</div>
+            <h3>Genomics</h3>
+            <p>Using genomic approaches to investigate gene regulation.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💊</div>
+            <h3>Therapeutic Discovery</h3>
+            <p>Exploring vulnerabilities that could inform new treatments.</p>
+        </div>
+
+    </div>
+
+    <section id="about">
+
+        <div class="about">
+
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                I am a PhD student in Biology with a background in Cell,
+                Molecular Biology, and Genetics. My research interests
+                center on cancer biology, cellular plasticity, and the
+                molecular mechanisms that influence tumor progression
+                and therapeutic response.
+            </p>
+
+            <br>
+
+            <p>
+                My research combines experimental and genomic approaches
+                to investigate how cancer cells change their identity
+                and develop vulnerabilities that may be therapeutically
+                targeted.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="research" id="research">
+
+        <h2 class="section-title">Research Interests</h2>
+
+        <div class="research-grid">
+
+            <div class="research-box">
+                <h3>Cancer Cell Plasticity</h3>
+                <p>
+                    Investigating how cancer cells change their cellular
+                    state and adapt to different environments or treatments.
+                </p>
+            </div>
+
+            <div class="research-box">
+                <h3>Prostate Cancer</h3>
+                <p>
+                    Studying molecular mechanisms underlying prostate cancer
+                    progression and treatment resistance.
+                </p>
+            </div>
+
+            <div class="research-box">
+                <h3>Genomics & Epigenomics</h3>
+                <p>
+                    Using approaches such as ATAC-seq, RNA-seq and
+                    transcriptional profiling to study gene regulation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experience">
+
+        <h2 class="section-title">Research Experience</h2>
+
+        <div class="about">
+
+            <h3>Temple University</h3>
+            <p>PhD Student in Biology · 2026–Present</p>
+
+            <br>
+
+            <h3>Fox Chase Cancer Center</h3>
+            <p>
+                Scientific Technician · Feng Laboratory
+            </p>
+
+            <br>
+
+            <h3>Boston University</h3>
+            <p>
+                B.A. in Cell, Molecular Biology, and Genetics
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="research" id="publications">
+
+        <h2 class="section-title">Publications</h2>
+
+        <div class="about">
+
+            <p>
+                Publications, conference presentations, posters,
+                and other scientific work will be listed here.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <div class="about">
+
+            <p>
+                I am interested in connecting with researchers and
+                scientists working in cancer biology, molecular biology,
+                genomics, and related fields.
+            </p>
+
+            <br>
+
+            <p>
+                📧 Email: your.email@example.com
+            </p>
+
+            <p>
+                🔗 LinkedIn: Coming soon
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Diana Zakharova · Academic Website
+    </footer>
+
+</body>
+</html>
