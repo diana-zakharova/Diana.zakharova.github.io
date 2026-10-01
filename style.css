@@ -155,19 +155,3 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:#81
 @media(min-width:801px){
  .hobby-grid{grid-template-columns:repeat(4,1fr)}
 }
-
-.research-overview-figure{
-  max-width:1180px;
-  margin:55px auto 60px;
-  padding:0 28px;
-}
-.research-overview-figure img{
-  display:block;
-  width:100%;
-  height:auto;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(28,48,72,.08);
-}
-@media(max-width:700px){
-  .research-overview-figure{margin:38px auto 45px;padding:0 18px}
-}
