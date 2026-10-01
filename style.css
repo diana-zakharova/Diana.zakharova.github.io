@@ -42,7 +42,7 @@ a{color:inherit}
 .art-peach{fill:rgba(243,221,211,.7);stroke:#526987;stroke-width:2.2}
 .art-lav{fill:rgba(232,229,242,.65);stroke:#526987;stroke-width:2.2}
 .art-sage{fill:rgba(226,236,230,.7);stroke:#526987;stroke-width:2.2}
-.feature-strip{max-width:1180px;margin:auto;padding:38px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feature-strip{max-width:1180px;margin:auto;padding:38px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:14pxmargin-top:0;border-top:1px solid var(--line);
 .feature{padding:24px 18px;text-align:center;border-right:1px solid var(--line)}
 .feature:last-child{border-right:0}
 .icon{font-size:31px;margin-bottom:10px}
@@ -122,15 +122,15 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:#81
 .approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .approach-card{padding:28px 18px 30px;text-align:center;border-right:1px solid var(--line)}
 .approach-card:last-child{border-right:0}
-.approach-icon{height:88px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+
 .approach-icon svg{width:82px;height:70px;overflow:visible}
 .approach-card h3{font-family:var(--serif);font-size:18px;margin-bottom:7px}
 .approach-card p{font-size:13px;color:var(--muted);line-height:1.45}
-.icon-stroke{fill:none;stroke:#526987;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.icon-fill-blue{fill:#dfeaf1;stroke:#526987;stroke-width:2.3}
-.icon-fill-lav{fill:#e8e5f2;stroke:#526987;stroke-width:2.3}
-.icon-fill-peach{fill:#f3ddd3;stroke:#526987;stroke-width:2.3}
-.icon-fill-sage{fill:#e2ece6;stroke:#526987;stroke-width:2.3}
+
+
+
+
+
 @media(max-width:800px){
  .approach-grid{grid-template-columns:repeat(2,1fr)}
  .approach-card:nth-child(2){border-right:0}
@@ -154,4 +154,20 @@ footer{text-align:center;border-top:1px solid var(--line);padding:25px;color:#81
 .hobby-card:nth-child(4){grid-column:auto}
 @media(min-width:801px){
  .hobby-grid{grid-template-columns:repeat(4,1fr)}
+}
+
+.research-overview-figure{
+  max-width:1180px;
+  margin:55px auto 60px;
+  padding:0 28px;
+}
+.research-overview-figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(28,48,72,.08);
+}
+@media(max-width:700px){
+  .research-overview-figure{margin:38px auto 45px;padding:0 18px}
 }
